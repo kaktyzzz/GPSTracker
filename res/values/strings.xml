@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="send">Отправить</string>
+    <string name="automatic_send">Автоматическая отправка</string>
+    <string name="gpslog"></string>
+
+</resources>

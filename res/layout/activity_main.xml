@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/autosender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/automatic_send"
+            android:onClick="checkboxClick"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/sendToServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnSendClick"
+            android:text="@string/send"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/tbStartStop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="@string/start"
+        android:textOn="@string/stop" 
+        android:onClick="tbStartStopClick"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gpslog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="@string/gpslog"
+                android:freezesText="true"   />
+
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>
